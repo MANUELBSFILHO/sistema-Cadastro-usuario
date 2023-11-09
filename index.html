@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sistema de Cadastro</title>
+</head>
+<body>
+    <div class="container">
+        <form id="registerForm" onsubmit="registerUser(event)">
+            <h2>Cadastro</h2>
+            <label for="username">Usuário:</label>
+            <input type="text" id="username" name="username" required>
+            
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+
+        <form id="loginForm" onsubmit="loginUser(event)">
+            <h2>Login</h2>
+            <label for="loginUsername">Usuário:</label>
+            <input type="text" id="loginUsername" name="loginUsername" required>
+            
+            <label for="loginPassword">Senha:</label>
+            <input type="password" id="loginPassword" name="loginPassword" required>
+
+            <button type="submit">Entrar</button>
+        </form>
+
+        <div id="message"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
